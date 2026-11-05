@@ -171,3 +171,7 @@
 .name-footnote span{display:inline-block;color:var(--orange);font-size:16px;font-weight:800;margin-right:6px}
 @media(max-width:850px){.name-footnote{margin:25px 0 0;font-size:14px}}
 @media(max-width:610px){.name-footnote{margin:22px 0 0;font-size:13px;line-height:1.55}}
+
+/* Compact GitHub mark in the contact link. */
+.contact-other .github-link{display:inline-flex;align-items:center;gap:7px}
+.contact-other .github-mark{display:inline-block;width:15px;height:15px;flex:0 0 15px;fill:currentColor}
