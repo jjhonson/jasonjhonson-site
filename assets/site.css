@@ -177,3 +177,34 @@
 .contact-other .github-mark{display:inline-block;width:15px;height:15px;flex:0 0 15px;fill:currentColor}
 .contact-other .linkedin-link{display:inline-flex;align-items:center;gap:7px}
 .contact-other .linkedin-mark{display:inline-block;width:15px;height:15px;flex:0 0 15px;fill:currentColor}
+
+/* V3.4 / Building projects. Compact code-first showcase within the existing Focus grid. */
+.build-feature{margin-top:32px;border:1px solid var(--line);background:#fafaf7;padding:23px 24px 20px}
+.build-kicker{display:flex;align-items:center;gap:9px;font:10px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.09em;color:var(--orange-ink)}
+.build-kicker-dot{width:7px;height:7px;flex:0 0 7px;border-radius:50%;background:var(--orange)}
+.build-feature h4{font-size:clamp(26px,2.5vw,34px);line-height:1.13;font-weight:730;letter-spacing:-.04em;margin:20px 0 14px}
+.current-item .build-feature p{font-size:14px;line-height:1.65;margin:0 0 16px;max-width:none}
+.build-stack{font:11px/1.75 var(--mono);color:var(--muted);margin-top:18px}
+.build-stack span{color:var(--orange)}
+.build-workflow{display:flex;align-items:center;flex-wrap:wrap;gap:6px 9px;margin:19px 0 22px;padding:13px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font:10px/1.45 var(--mono);color:var(--muted)}
+.build-workflow span:nth-child(even){font-size:15px;color:var(--orange-ink);line-height:1}
+.build-links{display:flex;gap:10px 25px;flex-wrap:wrap;align-items:center}
+.build-links .text-link{margin-top:0;font-size:11px}
+.current-item .build-feature p.build-status{font:10px/1.6 var(--mono);color:var(--muted);margin:18px 0 0}
+.build-more{margin-top:34px}
+.build-more-heading{font:10px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.09em;color:var(--orange-ink);padding-bottom:12px;border-bottom:2px solid var(--ink)}
+.build-project-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);align-items:start}
+.build-project-copy h4{font-size:20px;line-height:1.24;font-weight:710;letter-spacing:-.03em;margin:0 0 6px}
+.current-item .build-project-copy p{font-size:13px;line-height:1.5;color:var(--muted);margin:0;max-width:none}
+.build-project-links{display:flex;gap:15px;white-space:nowrap;padding-top:3px}
+.build-project-links a{font:11px/1.5 var(--mono);border-bottom:1px solid var(--orange);padding-bottom:4px}
+.build-project-links a:hover{border-bottom-color:var(--ink)}
+.build-all{margin-top:23px}
+.build-all .text-link{margin-top:0;font-size:11px}
+@media(max-width:610px){
+  .build-feature{padding:19px 17px 18px}
+  .build-workflow{gap:6px 7px}
+  .build-project-row{grid-template-columns:1fr;gap:10px}
+  .build-project-links{padding-top:0}
+  .build-more{margin-top:29px}
+}
