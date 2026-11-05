@@ -43,3 +43,19 @@ if(year) year.textContent = new Date().getFullYear();
     }
   } catch(e){ /* static fallback remains */ }
 })();
+
+
+// Keep the site useful if the third-party contribution SVG is unavailable.
+const contributionChart = document.getElementById('github-contribution-chart');
+if (contributionChart) {
+  const showContributionFallback = () => {
+    const wrap = contributionChart.closest('.contribution-image-wrap');
+    const fallback = document.getElementById('contribution-chart-fallback');
+    if (wrap) wrap.hidden = true;
+    if (fallback) fallback.hidden = false;
+  };
+  contributionChart.addEventListener('error', showContributionFallback);
+  if (contributionChart.complete && contributionChart.naturalWidth === 0) {
+    showContributionFallback();
+  }
+}
