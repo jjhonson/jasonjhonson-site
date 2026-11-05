@@ -227,3 +227,34 @@
   .contribution-header{align-items:flex-start;gap:12px;flex-direction:column;margin-bottom:20px}
   .contribution-image-wrap img{width:780px;min-width:700px}
 }
+
+/* V3.6 / Designed Scale profile and balanced Focus layout. */
+.advisory-feature{margin-top:33px;background:#fffdf9;border:1px solid var(--line);padding:23px 24px 24px}
+.advisory-logo{display:block;width:320px;max-width:100%;height:auto;margin:0 0 23px}
+.current-item .advisory-intro{font-size:14px;line-height:1.65;color:#4f5751;margin:0 0 20px;max-width:none}
+.advisory-services{border-top:1px solid var(--line)}
+.advisory-service{display:grid;grid-template-columns:112px minmax(0,1fr);gap:14px;padding:15px 0;border-bottom:1px solid var(--line)}
+.advisory-service>span{font:10px/1.5 var(--mono);letter-spacing:.018em;color:var(--orange-ink)}
+.advisory-service>div{font-size:13px;line-height:1.5;color:#4f5751}
+.advisory-links{display:flex;gap:10px 21px;flex-wrap:wrap;align-items:center;margin-top:22px}
+.advisory-links .text-link{font-size:11px;margin-top:0}
+.project-ribbon{margin-top:42px;padding:24px 0 0;border-top:1px solid var(--line);display:grid;grid-template-columns:185px minmax(0,1fr) auto;gap:4%;align-items:start}
+.project-ribbon-kicker{font:10px/1.5 var(--mono);letter-spacing:.075em;color:var(--orange-ink);padding-top:4px}
+.project-ribbon-copy h3{font-size:21px;font-weight:710;letter-spacing:-.03em;line-height:1.25;margin:0 0 7px}
+.project-ribbon-copy p{font-size:14px;line-height:1.55;color:var(--muted);margin:0;max-width:600px}
+.project-ribbon>.text-link{font-size:11px;margin-top:4px;white-space:nowrap}
+.project-ribbon+.contribution-section{margin-top:52px}
+@media(max-width:850px){
+ .advisory-feature{padding:20px}
+ .project-ribbon{grid-template-columns:130px minmax(0,1fr);gap:18px}
+ .project-ribbon>.text-link{grid-column:2;margin-top:0}
+}
+@media(max-width:610px){
+ .advisory-feature{padding:20px 17px}
+ .advisory-logo{width:290px}
+ .advisory-service{grid-template-columns:91px minmax(0,1fr);gap:10px}
+ .advisory-service>span{font-size:9px}
+ .project-ribbon{margin-top:32px;grid-template-columns:1fr;gap:8px}
+ .project-ribbon>.text-link{grid-column:1;margin-top:9px}
+ .project-ribbon+.contribution-section{margin-top:43px}
+}
