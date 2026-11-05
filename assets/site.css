@@ -175,3 +175,5 @@
 /* Compact GitHub mark in the contact link. */
 .contact-other .github-link{display:inline-flex;align-items:center;gap:7px}
 .contact-other .github-mark{display:inline-block;width:15px;height:15px;flex:0 0 15px;fill:currentColor}
+.contact-other .linkedin-link{display:inline-flex;align-items:center;gap:7px}
+.contact-other .linkedin-mark{display:inline-block;width:15px;height:15px;flex:0 0 15px;fill:currentColor}
