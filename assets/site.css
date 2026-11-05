@@ -208,3 +208,22 @@
   .build-project-links{padding-top:0}
   .build-more{margin-top:29px}
 }
+
+/* Live GitHub contribution calendar. Full-width under the two Focus columns. */
+.contribution-section{margin-top:64px;border-top:1px solid var(--line);padding-top:27px}
+.contribution-header{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-bottom:26px}
+.contribution-header h3{font-size:clamp(22px,2.35vw,31px);line-height:1.18;letter-spacing:-.035em;margin:0;font-weight:710}
+.contribution-header>a{font:11px/1.5 var(--mono);border-bottom:1px solid var(--orange);padding-bottom:6px;white-space:nowrap}
+.contribution-header>a:hover{border-bottom-color:var(--ink)}
+.contribution-image-wrap{max-width:100%;overflow-x:auto}
+.contribution-image-wrap>a{display:block;width:max-content;max-width:none}
+.contribution-image-wrap img{display:block;min-width:700px;width:900px;height:auto;max-width:none}
+.contribution-fallback{font:13px/1.6 var(--sans);color:var(--muted);margin:0}
+.contribution-fallback a{border-bottom:1px solid var(--orange)}
+.contribution-fallback[hidden]{display:none}
+@media(max-width:850px){.contribution-section{margin-top:50px}}
+@media(max-width:610px){
+  .contribution-section{margin-top:42px;padding-top:23px}
+  .contribution-header{align-items:flex-start;gap:12px;flex-direction:column;margin-bottom:20px}
+  .contribution-image-wrap img{width:780px;min-width:700px}
+}
