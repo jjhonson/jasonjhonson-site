@@ -149,7 +149,7 @@
       const posts = parseFeed(await response.text());
       if (!posts.length) return;
       renderFeatured(posts[0]);
-      renderRecent(posts.slice(1, 4));
+      renderRecent(posts.slice(1, 5));
     } catch (_) {
       // Leave the useful, server-rendered fallback in place.
     }
