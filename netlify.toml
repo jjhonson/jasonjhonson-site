@@ -6,3 +6,10 @@
   [headers.values]
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Read Ghost's public RSS feed from the same origin without a public API key.
+[[redirects]]
+  from = "/ghost-feed.xml"
+  to = "https://notes.jasonjhonson.com/rss/"
+  status = 200
+
