@@ -125,8 +125,8 @@
   text-align:left;
 }
 .chapter-firms.wordmarks .firm-lakewest-wordmark small{
-  font-family:var(--sans);font-weight:600;font-size:10px;
-  letter-spacing:.09em;text-transform:uppercase;
+  font-family:inherit;font-weight:inherit;font-size:10px;
+  letter-spacing:.01em;text-transform:none;
 }
 .chapter-firms.wordmarks .firm-coach{font-size:11px;letter-spacing:.10em}
 .chapter-firms.wordmarks .firm-american{font-size:11px;letter-spacing:-.055em;white-space:nowrap}
